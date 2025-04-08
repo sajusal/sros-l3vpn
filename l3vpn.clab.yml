@@ -9,11 +9,17 @@ topology:
     license: license-sros25.txt
   nodes:
     pe1:
+      startup-config: configs/pe1-config.txt
     pe2:
+      startup-config: configs/pe2-config.txt
     cea1:
+      startup-config: configs/cea1-config.txt
     cea2:
+      startup-config: configs/cea2-config.txt
     cez1:
+      startup-config: configs/cez1-config.txt
     cez2:
+      startup-config: configs/cez2-config.txt
   links:
     - endpoints: ["pe1:eth1", "pe2:eth1"]
     - endpoints: ["pe1:eth10", "cea1:eth10"]
