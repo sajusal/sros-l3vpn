@@ -1,0 +1,22 @@
+name: sfmix
+
+prefix: ""
+topology:
+  defaults:
+    kind: nokia_sros
+    type: ixr-e2
+    image: vrnetlab/nokia_sros:25.3.R1
+    license: license-sros25.txt
+  nodes:
+    pe1:
+    pe2:
+    cea1:
+    cea2:
+    cez1:
+    cez2:
+  links:
+    - endpoints: ["pe1:eth1", "pe2:eth1"]
+    - endpoints: ["pe1:eth10", "cea1:eth10"]
+    - endpoints: ["pe1:eth11", "cez1:eth10"]
+    - endpoints: ["pe2:eth10", "cea2:eth10"]
+    - endpoints: ["pe2:eth11", "cez2:eth10"]
