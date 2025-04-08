@@ -1,12 +1,3 @@
-# TiMOS-B-25.3.R1 both/x86_64 Nokia 7250 IXR Copyright (c) 2000-2025 Nokia.
-# All rights reserved. All use subject to applicable license agreements.
-# Built on Wed Mar 12 21:50:19 UTC 2025 by builder in /builds/253B/R1/panos/main/sros
-# Configuration format version 25.3 revision 0
-
-# Generated 2025-04-08T23:10:21.5Z by admin from 200::
-# Commit ID 21
-#   Committed 2025-04-08T22:19:43.9Z by admin (MD-CLI) from 200::
-
 configure {
     card 1 {
         card-type imm2-qsfpdd+2-qsfp28+24-sfp28
@@ -657,24 +648,3 @@ configure {
         }
     }
 }
-
-persistent-indices {
-    description "Persistent indices are maintained by the system and must not be modified."
-    vrtr-id {
-        router-name "FREE" vrtr-id 2
-        router-name "PAID" vrtr-id 3
-    }
-    vrtr-if-id {
-        router-name "Base" interface-name "to-pe1" vrtr-id 1 if-index 2
-        router-name "FREE" interface-name "to-cea1" vrtr-id 2 if-index 3
-        router-name "PAID" interface-name "to-cez2" vrtr-id 3 if-index 4
-    }
-    mpls-lsp-index {
-        lsp-name "to-pe" type 2 lsp-index 1
-    }
-    mpls-path-index {
-        router-id 1 path-name "loose" path-index 1
-    }
-}
-
-# Finished 2025-04-08T23:10:21.5Z
