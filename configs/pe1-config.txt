@@ -630,3 +630,6 @@ configure {
         }
     }
 }
+    /configure router "Base" origin-validation rpki-session 172.18.10.10 admin-state enable
+    /configure router "Base" origin-validation rpki-session 172.18.10.10 local-address 1.1.1.1
+    /configure router "Base" origin-validation rpki-session 172.18.10.10 port 8282
