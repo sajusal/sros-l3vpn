@@ -2,8 +2,28 @@
 
 ![image](vprn-toplogy.jpg)
 
-2 VRFs:
+
+Steps to deploy lab:
+
+- On VM, install docker and containerlab:
+  
+  `curl -sL https://containerlab.dev/setup | sudo -E bash -s "all"`
+  
+- Download SROS docker image and license from sharepoint
+  
+- Load SROS docker image
+
+`docker load -i sros-25-3R1-docker.tar.gz`
+
+- Verify image is present in local docker repo using `docker images`
+
+- Deploy lab using `sudo clab dep -t l3vpn.clab.yml`
+
+- ssh to the nodes using username or IP. Default login is admin/admin
+
+2 VRFs on PEs:
 - FREE
+  
 - PAID
 
 To see full config:
